@@ -32,7 +32,7 @@ async def root():
 async def tts(
     text: str = Query(..., description="Text to synthesize"),
     voice: str = Query(DEFAULT_VOICE, description="Edge TTS voice name"),
-    rate: str = Query("+55%", description="Speech rate adjustment"),
+    rate: str = Query("+40%", description="Speech rate adjustment"),
     pitch: str = Query("+30Hz", description="Pitch adjustment"),
 ):
     """
